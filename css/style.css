@@ -1,0 +1,193 @@
+
+* {                     
+    padding: 0;   /* resetar parte do estilo dos browsers */ 
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+@font-face {        /*  fonte baixada do fonts/google.com  */
+    font-family: 'furacao' ;   
+    src: url("../fonte/Hurricane-Regular.ttf");
+}
+
+body { 
+    background-color: #132235;
+    color: #6ddad3;
+}
+
+/*********************************** Cabeçalho  ****************************/ 
+header#cabecalho {
+    background-color: #132235;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+ /************** Logo da empresa (cabeçalho)  ******************/       
+#logo {         
+    margin: 5px 10px;
+    width: 500px; 
+    height: 150px; 
+    object-fit: cover;          /* corta a foto (não deforma)*/
+    object-position: 50% 50%;   /* posição central (altura/largura) */  
+}
+ /**********  Ao passar o Mouse sobre as opções (cabeçalho) *******/  
+nav a:hover {
+    color: #dddddd;
+    text-decoration: underline;
+}
+
+/*******  posicionamento Quem Somos/Fale Conosco (cabeçalho) ****/
+nav ul {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+nav li { display: inline-block;  }
+
+/************ texto  Quem Somos/Fale Conosco (cabeçalho) ****/ 
+nav a {
+    /* color: #6ddad3; */
+    text-decoration: none;
+    color: #6ddad3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;     
+    font-weight: bold;
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+/*********************** titulo: Diversas opções para sua escolha *************/
+.titulo {
+    font-family: 'furacao';
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+/****************************  Seções ******************************************/
+section {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 1px 30px 1px 70px;
+
+}
+/****************************  Seção Quem Somos  ******************************/
+#quemSomos {
+    display: inline-block;
+    background-color: #6ddad3;
+    color: #132235;
+    height: 900px;       /* altura da seção Quem_Somos */
+    padding-left: 70px;
+            
+}
+#quemSomos h2 {
+    padding: 15px 0;
+    font-size: 35px;  
+    font-weight: bolder;
+    margin: 5px 0;
+}
+#quemSomos p {
+    text-align: justify;
+    font-size: 27px;    /* tamanho da fonte */  
+    padding: 0 80px 10px 0 ;
+
+}
+/****************************  MAQUETE  **************************/ 
+.maquete {          /*   tamanho  */ 
+    width: 600px; 
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+ } 
+
+h5 { text-align: center; }   /* centralizado */
+
+
+ /****************************  Seção Fale Conosco  **************************/ 
+#faleConosco {
+    height: 90vh;                  /* altura da seção Fale_Conosco */
+}
+#faleConosco h2 {
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+
+ /***************************  Formulário Fale Conosco  **********************/ 
+#formulario {
+    margin-left: 180px;
+    padding: 10px 200px;
+    display: flexbox;
+    
+}
+
+fieldset {
+    border-width: 2px;
+    width: 380px;
+    display: grid;
+}
+fieldset legend {
+    margin-left: 10px;
+    padding: 2px 4px;     /* espaço entre Email/Mensagem e a linha (moldura) */
+    font-size: 27px;
+    font-weight: bold;
+}
+fieldset input, textarea {
+    width: 365px;
+    font-size: 11pt;
+    padding: 2px;
+    margin: 0 0 5px 5px;
+}
+fieldset input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+
+/********************************** botão Enviar  *****************************/ 
+
+#botao {
+    background-color: #132235;
+    color: #6ddad3;
+    margin-top: 10px;
+    border: 2px solid #6ddad3;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+/************************* Mensagem de cadastro enviado  *****************/  
+#resultado {
+    font-size: 20pt;
+    font-style: italic;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+/****************************** Rodapé  *********************/  
+footer {
+    background-color: #6ddad3;
+    height: 53px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
+/*********************** ícones no Rodapé  *************************/  
+footer img {
+    height: 45px;
+    border-radius: 50px;
+}
+/******************************************************************/ 
+#assinatura {
+    font-size: 10pt;
+    font-style: italic;
+    color: gray;
+    text-align: right;
+    padding: 0 10px 5px;
+}
+

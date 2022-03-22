@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morar bem</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fotos.css">
+    <script src="validarEmail.js"></script> 
+
+</head>
+
+<body>
+<!--========================== Cabeçalho =============================-->
+    <header id = "cabecalho">
+        <h3><img id="logo" src="logo/f4life.png" alt="logo da F4Life"> </h3>
+        
+<!--========================== Menu  ==========================-->        
+        <nav id="menu">
+            <ul type="disc">
+                <li><a href="#quemSomos">Quem Somos</a></li>
+                <li><a href="#faleConosco">Fale Conosco</a></li>
+            </ul>
+        </nav> 
+    </header>
+<!--========================== MAIN  ================================-->
+    <main>
+        <h1 class="titulo">Diversas opções para sua escolha</h1> 
+        <ul id="fotos">
+            <li id="f1" ><span> Kitnet 30m2 </span></li>
+            <li id="f2" ><span> Kitnet 30m2 </span></li>
+            <li id="f3" ><span> Kitnet 50m2 </span></li>
+            <li id="f4" ><span> Kitnet 30m2 </span></li>
+            <li id="f5" ><span> Kitnet 40m2 </span></li>
+            <li id="f6" ><span> Kitnet 50m2 </span></li>
+            <li id="f7" ><span> Kitnets de 28m2 </span></li>
+            <li id="f8" ><span> República para 8 estudantes </span></li>
+            <li id="f9" ><span> República para 10 estudantes </span></li>
+
+        </ul>
+    </main> 
+ <!--=================== Seção QUEM SOMOS  ===============================-->   
+    <section id="quemSomos">
+        <h2>Quem Somos</h2>
+        <p>A <strong>F4Life</strong> é uma empresa de aluguéis de repúblicas para pessoas universitárias. Trata-se de uma plataforma digital que usa a tecnologia para simplificar a locação de imóveis (repúblicas) para estudantes universitários.<p>
+        <p>Através da tecnologia, reinventamos os processos de locação, criando um procedimento simples, ágil e agradável tanto para o proprietário quanto para os estudantes. Estes não precisam se preoculpar com fiador pois realizamos apenas uma análise de crédito.</p>
+        <p>Para o proprietário, temos uma opção a mais, o seguro fiança, uma garantia que proporciona mais segurança e tranquilidade ao alugar seu imóvel.</p> 
+        <p>A <strong>F4Life</strong> garante o depósito do aluguel na conta do proprietário sempre no dia certo de cada mês.<br>
+        Além dessas vantagens, similar aos modelos de <em>Quinto Andar</em> e <em>Loft</em> , a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+
+        <h5><img class="maquete" src="https://cdn.mooble.com/socialcontents-projectimages/dd6adb43-bde6-4976-98b7-2e2e4b058738E8F78D2FDF699D9A1743B760FF18DA1D.jpg"> </h5>
+    
+    </section>
+
+ <!--=============== Seção Fale Conosco (Formulário) ======================-->   
+    <section id="faleConosco">
+        <h2>Fale Conosco</h2>
+        <form id="formulario" name="cliente" >
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email" placeholder="user@domain.com"> <!--minlength="7" maxlength="53" required -->
+            </fieldset>
+
+            <fieldset><legend>Mensagem</legend>
+                    <textarea name="mensagem" cols="50" rows="10" placeholder="Deixe sua mensagem"></textarea> <!--required -->
+            </fieldset>
+
+            <!-- <button type="submit">Enviar</button> -->
+            <input id="botao" type="button" value="Enviar" onclick="validarEmail()"/>
+        </form>
+        <h4 id = 'resultado'></h4>
+
+    </section>
+
+    
+
+ <!--======================= Rodapé ======================================--> 
+    <footer>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/">
+            <img src="logo/twitter.png" alt="Twitter">   
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://facebook.com/">
+            <img src="logo/facebook.png" alt="Facebook">   
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://instagram.com/">
+            <img src="logo/instagram.jpg" alt="Instagram">   
+        </a>
+    </footer>
+
+    <p id="assinatura">developed by Eber Brea - Desenvolve 2022 - Boticário</p>
+ 
+</body>
+</html>
